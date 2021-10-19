@@ -1,0 +1,114 @@
+@import 'config';
+@import 'utilities';
+@import 'items';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+a{
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul{
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+  text-transform: uppercase;
+}
+
+img{
+  width: 100%;
+}
+
+#logo{
+  width: 90px;
+  height: 80px;
+}
+
+#main-nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  ul{
+    display: flex;
+  }
+
+  li{
+    padding: 1rem 1.5rem;
+  }
+
+  a{
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover{
+      border-color: $medium-color;
+    }
+    &.current{
+      border-color: $main-color;
+    }
+  }
+}
+
+#header{
+  //Header Home
+  &-home{
+    background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+    color: $medium-color;
+
+    //Header Content
+    .header-content{
+      text-align: center;
+      padding: 20%;
+
+      h1{
+        font-size: 5rem;
+        line-height: 1.2;
+      }
+      h3{
+        font-size: 2rem;
+        margin-bottom: 5px;
+      }
+      
+      h1,h3{
+        background-color: rgba($color: $light-color, $alpha: .9);
+      }
+    }
+  }
+  //Header Inner
+  &-inner{
+    background: $bg-image no-repeat 20% 30% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
+  }
+}
+
+#home{
+  &-a{
+    .section-title{
+      background-color: $light-color;
+      color: $dark-color;
+      border: 5px solid $dark-color;
+      margin-bottom: 10px;
+      padding-top: 0.5rem;
+    }
+  }
+}
