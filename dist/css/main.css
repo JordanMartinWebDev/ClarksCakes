@@ -85,7 +85,7 @@ button[class^='btn-']:hover, a[class^='btn-']:hover, input[class^='btn-']:hover 
   display: block;
   padding-bottom: 0.5rem;
   text-align: center;
-  font-weight: bolder;
+  font-weight: 200;
   text-transform: uppercase; }
 
 .items {
@@ -211,7 +211,7 @@ img {
       border-color: #e7223a; }
 
 #header-home {
-  background: url("/dist/img/showcase.jpg") no-repeat center right/cover;
+  background: url("../img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #6f1712; }
   #header-home .header-content {
@@ -227,7 +227,7 @@ img {
       background-color: rgba(255, 248, 255, 0.9); }
 
 #header-inner {
-  background: url("/dist/img/showcase.jpg") no-repeat 20% 30%/cover;
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #e7223a; }
 
