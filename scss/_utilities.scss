@@ -1,3 +1,8 @@
+.curse-font{
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700px;
+}
+
 .container{
   max-width: $website-width;
   padding: 0 1.5rem;
@@ -17,7 +22,7 @@
 .btn{
   &-main{
     @extend %btn-shared;
-    color: #333;
+    color: #fff;
     background-color: $main-color;
   }
   &-light{
@@ -111,6 +116,6 @@ button[class^='btn-']:hover, a[class^='btn-']:hover, input[class^='btn-']:hover{
   display: block;
   padding-bottom: 0.5rem;
   text-align: center;
-  font-weight: 200;
-  text-transform: uppercase;
+  // font-weight: 200;
+  // text-transform: uppercase;
 }

@@ -22,12 +22,17 @@ a{
   color: $dark-color;
 }
 
+p{
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
 ul{
   list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6{
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 img{
@@ -43,6 +48,7 @@ img{
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  backdrop-filter: blur(3px);
 
   ul{
     display: flex;
@@ -73,6 +79,7 @@ img{
     background: $bg-image no-repeat center right / cover;
     height: 100vh;
     color: $medium-color;
+    border-bottom: 2px $main-color solid;
 
     //Header Content
     .header-content{
@@ -84,7 +91,7 @@ img{
         line-height: 1.2;
       }
       h3{
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: 5px;
       }
       
@@ -103,12 +110,13 @@ img{
 
 #home{
   &-a{
+    padding-bottom: 15px;
+    border-bottom: 2px $main-color solid;
+
     .section-title{
-      background-color: $light-color;
-      color: $dark-color;
-      border: 5px solid $dark-color;
-      margin-bottom: 10px;
-      padding-top: 0.5rem;
+      font-size: 4rem;
+      font-weight: bold;
+      color: $medium-color;
     }
   }
 }
